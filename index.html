@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Guilherme Gonçalves — Desenvolvedor Front-End em formação. HTML, CSS, JavaScript." />
+  <title>Guilherme Gonçalves · Dev Front-End</title>
+
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==============================
+       HEADER / NAVEGAÇÃO
+  ================================= -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <!-- Logo / nome abreviado -->
+      <a href="#hero" class="header__logo" aria-label="Início">GG<span class="header__logo-dot">.</span></a>
+
+      <!-- Navegação principal -->
+      <nav class="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#sobre"      class="nav__link">Sobre</a></li>
+          <li><a href="#habilidades" class="nav__link">Skills</a></li>
+          <li><a href="#projetos"   class="nav__link">Projetos</a></li>
+          <li><a href="#contato"    class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão hamburguer (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul class="mobile-menu__list">
+        <li><a href="#sobre"       class="mobile-menu__link">Sobre</a></li>
+        <li><a href="#habilidades" class="mobile-menu__link">Skills</a></li>
+        <li><a href="#projetos"    class="mobile-menu__link">Projetos</a></li>
+        <li><a href="#contato"     class="mobile-menu__link">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==============================
+         HERO SECTION
+    ================================= -->
+    <section class="hero" id="hero" aria-label="Apresentação">
+      <!-- Elemento decorativo de fundo -->
+      <div class="hero__bg-circle" aria-hidden="true"></div>
+      <div class="hero__bg-grid"   aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <!-- Badge de status -->
+        <div class="hero__badge reveal">
+          <span class="hero__badge-dot"></span>
+          Disponível para oportunidades
+        </div>
+
+        <!-- Heading principal -->
+        <h1 class="hero__name reveal reveal--delay-1">
+          Guilherme<br />
+          <span class="hero__name-accent">Gonçalves</span>
+        </h1>
+
+        <!-- Título com digitação animada -->
+        <p class="hero__title reveal reveal--delay-2">
+          Desenvolvedor Front-End
+          <span class="hero__cursor" aria-hidden="true">|</span>
+        </p>
+
+        <!-- Headline estratégica para recrutadores -->
+        <p class="hero__headline reveal reveal--delay-3">
+          Transformo lógica em interfaces — aprendo rápido,<br class="br-desktop" />
+          escrevo código limpo e estou pronto para crescer com o seu time.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero__actions reveal reveal--delay-4">
+          <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+          <a href="#contato"  class="btn btn--outline">Entrar em contato</a>
+        </div>
+
+        <!-- Indicadores de tecnologias -->
+        <div class="hero__tech reveal reveal--delay-5" aria-label="Tecnologias principais">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Git</span>
+          <span class="tech-tag">SQL</span>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para a seção Sobre">
+        <span class="hero__scroll-text">scroll</span>
+        <span class="hero__scroll-arrow" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ==============================
+         SOBRE MIM
+    ================================= -->
+    <section class="sobre" id="sobre" aria-label="Sobre mim">
+      <div class="container">
+
+        <!-- Cabeçalho da seção -->
+        <div class="section-header reveal">
+          <span class="section-label">01 — sobre</span>
+          <h2 class="section-title">Quem sou eu</h2>
+        </div>
+
+        <div class="sobre__grid">
+          <!-- Foto / avatar decorativo -->
+          <div class="sobre__visual reveal">
+            <div class="sobre__avatar-wrap">
+              <div class="sobre__avatar" aria-hidden="true">
+                <!-- Iniciais como placeholder de foto -->
+                <span class="sobre__avatar-initials">GG</span>
+              </div>
+              <!-- Cartão de dado flutuante -->
+              <div class="sobre__float-card sobre__float-card--1">
+                <span class="sobre__float-icon">🎓</span>
+                <span>Em formação</span>
+              </div>
+              <div class="sobre__float-card sobre__float-card--2">
+                <span class="sobre__float-icon">🚀</span>
+                <span>Aprendizado diário</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texto -->
+          <div class="sobre__text reveal reveal--delay-1">
+            <p class="sobre__paragraph sobre__paragraph--highlight">
+              Sou desenvolvedor em formação com base sólida em HTML, CSS e JavaScript —
+              e uma curiosidade que não para quieta.
+            </p>
+
+            <p class="sobre__paragraph">
+              Minha jornada na tecnologia começou pela vontade de entender como as coisas
+              funcionam por trás da tela. Hoje, esse interesse se transformou em prática:
+              estudo todos os dias, construo projetos reais e me desafio constantemente
+              a escrever código mais limpo e estruturado.
+            </p>
+
+            <p class="sobre__paragraph">
+              Não busco uma vaga para "ter experiência". Busco um time onde eu possa
+              contribuir desde o primeiro dia, aprender com profissionais experientes
+              e evoluir junto com o produto. Acredito que iniciantes que aprendem rápido
+              e têm atitude certa valem muito — e é isso que trago.
+            </p>
+
+            <!-- Valores / diferenciais -->
+            <ul class="sobre__values" aria-label="Meus diferenciais">
+              <li class="sobre__value-item">
+                <span class="sobre__value-icon" aria-hidden="true">→</span>
+                Mentalidade de aprendizado contínuo
+              </li>
+              <li class="sobre__value-item">
+                <span class="sobre__value-icon" aria-hidden="true">→</span>
+                Atenção a detalhes e boas práticas
+              </li>
+              <li class="sobre__value-item">
+                <span class="sobre__value-icon" aria-hidden="true">→</span>
+                Código organizado e legível
+              </li>
+              <li class="sobre__value-item">
+                <span class="sobre__value-icon" aria-hidden="true">→</span>
+                Comprometimento com resultados reais
+              </li>
+            </ul>
+
+            <a href="#contato" class="btn btn--primary btn--small">Vamos conversar →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         HABILIDADES
+    ================================= -->
+    <section class="habilidades" id="habilidades" aria-label="Habilidades técnicas">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-label">02 — skills</span>
+          <h2 class="section-title">O que eu sei fazer</h2>
+        </div>
+
+        <!-- Grid de cards de habilidade -->
+        <div class="skills__grid">
+
+          <!-- Card: HTML -->
+          <article class="skill-card reveal" data-level="75">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 3L5.5 19L12 21L18.5 19L20 3H4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M16 8H8L8.5 13H15.5L15 17L12 18L9 17L8.8 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">HTML5</h3>
+            <p class="skill-card__desc">Semântica, acessibilidade e estrutura de documentos web.</p>
+            <div class="skill-card__bar-wrap" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Nível HTML: 75%">
+              <div class="skill-card__bar" data-width="75"></div>
+            </div>
+            <span class="skill-card__level">Intermediário</span>
+          </article>
+
+          <!-- Card: CSS -->
+          <article class="skill-card reveal reveal--delay-1" data-level="70">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 3L5.5 19L12 21L18.5 19L20 3H4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M16 8H8L8.5 12H15.5L15 16.5L12 17.5L9 16.5L8.8 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">CSS3</h3>
+            <p class="skill-card__desc">Flexbox, Grid, animações, responsividade e design system.</p>
+            <div class="skill-card__bar-wrap" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Nível CSS: 70%">
+              <div class="skill-card__bar" data-width="70"></div>
+            </div>
+            <span class="skill-card__level">Intermediário</span>
+          </article>
+
+          <!-- Card: JS -->
+          <article class="skill-card reveal reveal--delay-2" data-level="55">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M9 17C9 18 9.5 18.5 10.5 18.5C11.5 18.5 12 17.8 12 17V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M15 12.5C14 12.5 13.5 13 13.5 13.5C13.5 15 16.5 14.5 16.5 16.5C16.5 17.5 15.5 18.5 14 18.5C12.8 18.5 12 17.8 12 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">JavaScript</h3>
+            <p class="skill-card__desc">DOM manipulation, eventos, funções e lógica de programação.</p>
+            <div class="skill-card__bar-wrap" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Nível JS: 55%">
+              <div class="skill-card__bar" data-width="55"></div>
+            </div>
+            <span class="skill-card__level">Em evolução</span>
+          </article>
+
+          <!-- Card: Git -->
+          <article class="skill-card reveal reveal--delay-3" data-level="60">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6"  r="2" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="18" cy="6" r="2" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="6" cy="18" r="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 8V16" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 6H16" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M16 8L8 16" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">Git & GitHub</h3>
+            <p class="skill-card__desc">Versionamento, branches, commits e fluxo de trabalho colaborativo.</p>
+            <div class="skill-card__bar-wrap" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Nível Git: 60%">
+              <div class="skill-card__bar" data-width="60"></div>
+            </div>
+            <span class="skill-card__level">Básico–Intermediário</span>
+          </article>
+
+          <!-- Card: Responsividade -->
+          <article class="skill-card reveal reveal--delay-4" data-level="70">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="5" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M18 9H20C21.1 9 22 9.9 22 11V14C22 15.1 21.1 16 20 16H18" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 16V19M6 19H10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">Responsividade</h3>
+            <p class="skill-card__desc">Mobile-first, media queries e layouts adaptáveis para todos os dispositivos.</p>
+            <div class="skill-card__bar-wrap" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Nível Responsividade: 70%">
+              <div class="skill-card__bar" data-width="70"></div>
+            </div>
+            <span class="skill-card__level">Intermediário</span>
+          </article>
+
+          <!-- Card: SQL -->
+          <article class="skill-card reveal reveal--delay-5" data-level="40">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="12" cy="6" rx="8" ry="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 6V12C4 13.66 7.58 15 12 15C16.42 15 20 13.66 20 12V6" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 12V18C4 19.66 7.58 21 12 21C16.42 21 20 19.66 20 18V12" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__name">SQL</h3>
+            <p class="skill-card__desc">Consultas básicas, relacionamentos e manipulação de dados em banco.</p>
+            <div class="skill-card__bar-wrap" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="Nível SQL: 40%">
+              <div class="skill-card__bar" data-width="40"></div>
+            </div>
+            <span class="skill-card__level">Básico</span>
+          </article>
+
+        </div>
+
+        <!-- Nota honesta sobre as skills -->
+        <p class="skills__note reveal">
+          * Os níveis refletem onde estou <em>hoje</em>, com honestidade.
+          Aprender rápido é minha maior habilidade.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         PROJETOS
+    ================================= -->
+    <section class="projetos" id="projetos" aria-label="Projetos">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-label">03 — projetos</span>
+          <h2 class="section-title">O que construí</h2>
+        </div>
+
+        <div class="projects__grid">
+
+          <!-- Projeto 1 -->
+          <article class="project-card reveal">
+            <div class="project-card__preview project-card__preview--1" aria-hidden="true">
+              <div class="project-card__mockup">
+                <div class="mockup__bar"></div>
+                <div class="mockup__line mockup__line--wide"></div>
+                <div class="mockup__line mockup__line--medium"></div>
+                <div class="mockup__line mockup__line--short"></div>
+                <div class="mockup__btn"></div>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <h3 class="project-card__title">Este Portfólio</h3>
+              <p class="project-card__desc">
+                Construído do zero sem frameworks, com foco em semântica HTML,
+                CSS organizado e JavaScript para interações reais.
+                Mobile-first e acessível.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-link project-link--demo" aria-label="Ver demo do portfólio">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live demo
+                </a>
+                <a href="#" class="project-link project-link--code" aria-label="Ver código no GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 2 (placeholder estratégico) -->
+          <article class="project-card reveal reveal--delay-1">
+            <div class="project-card__preview project-card__preview--2" aria-hidden="true">
+              <div class="project-card__mockup">
+                <div class="mockup__bar"></div>
+                <div class="mockup__cards">
+                  <div class="mockup__small-card"></div>
+                  <div class="mockup__small-card"></div>
+                  <div class="mockup__small-card"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JS</span>
+              </div>
+              <h3 class="project-card__title">Em breve — Projeto #2</h3>
+              <p class="project-card__desc">
+                Próximo projeto sendo desenvolvido. Foco em JavaScript,
+                consumo de API e componentização sem frameworks.
+                Acompanhe no GitHub.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-link project-link--code" aria-label="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                  Acompanhar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 3 (placeholder estratégico) -->
+          <article class="project-card reveal reveal--delay-2">
+            <div class="project-card__preview project-card__preview--3" aria-hidden="true">
+              <div class="project-card__mockup">
+                <div class="mockup__bar"></div>
+                <div class="mockup__form">
+                  <div class="mockup__input"></div>
+                  <div class="mockup__input"></div>
+                  <div class="mockup__btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <div class="project-card__tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JS</span>
+              </div>
+              <h3 class="project-card__title">Em breve — Projeto #3</h3>
+              <p class="project-card__desc">
+                Aplicação com foco em SQL e back-end básico.
+                Desenvolvendo habilidades full-stack progressivamente.
+              </p>
+              <div class="project-card__links">
+                <a href="#" class="project-link project-link--code" aria-label="GitHub">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                  Acompanhar
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         CONTATO
+    ================================= -->
+    <section class="contato" id="contato" aria-label="Contato">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-label">04 — contato</span>
+          <h2 class="section-title">Vamos conversar?</h2>
+        </div>
+
+        <div class="contato__grid">
+
+          <!-- Informações de contato -->
+          <div class="contato__info reveal">
+            <p class="contato__text">
+              Estou aberto a oportunidades de estágio e vagas júnior.
+              Se você acredita que posso agregar ao seu time, me manda uma mensagem —
+              respondo rápido.
+            </p>
+
+            <ul class="contato__list" aria-label="Formas de contato">
+              <!-- E-mail -->
+              <li class="contato__item">
+                <a href="mailto:guilherme.reisgoncalvs@gmail.com" class="contato__link" aria-label="Enviar e-mail">
+                  <span class="contato__link-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                  </span>
+                  <span>guilherme.reisgoncalvs@gmail.com</span>
+                </a>
+              </li>
+
+              <!-- LinkedIn -->
+              <li class="contato__item">
+                <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer" class="contato__link" aria-label="Perfil no LinkedIn (abre em nova aba)">
+                  <span class="contato__link-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                    </svg>
+                  </span>
+                  <span>LinkedIn — Guilherme Gonçalves</span>
+                </a>
+              </li>
+
+              <!-- GitHub -->
+              <li class="contato__item">
+                <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="contato__link" aria-label="Perfil no GitHub (abre em nova aba)">
+                  <span class="contato__link-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                    </svg>
+                  </span>
+                  <span>GitHub — @seu-usuario</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Formulário de contato -->
+          <div class="contato__form-wrap reveal reveal--delay-1">
+            <form class="form" id="contactForm" novalidate aria-label="Formulário de contato">
+              <!-- Feedback de status -->
+              <div class="form__feedback" id="formFeedback" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+              <div class="form__group">
+                <label class="form__label" for="nome">Nome</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Seu nome completo"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                />
+                <span class="form__error" id="nomeError" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="email">E-mail</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="seu@email.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                />
+                <span class="form__error" id="emailError" role="alert"></span>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="mensagem">Mensagem</label>
+                <textarea
+                  class="form__input form__input--textarea"
+                  id="mensagem"
+                  name="mensagem"
+                  placeholder="Olá Guilherme, gostaria de conversar sobre..."
+                  rows="5"
+                  required
+                  aria-required="true"
+                ></textarea>
+                <span class="form__error" id="mensagemError" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <span class="btn__text">Enviar mensagem</span>
+                <span class="btn__loading" aria-hidden="true">Enviando...</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================
+       FOOTER
+  ================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">
+          Feito com HTML, CSS &amp; JS por
+          <strong>Guilherme Gonçalves</strong> · 2025
+        </p>
+        <p class="footer__sub">
+          Código disponível no
+          <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao Topo -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
